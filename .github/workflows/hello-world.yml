@@ -8,6 +8,7 @@ on: [workflow_dispatch]
 jobs:
   # Nom du job
   first-job:
+    name: my first job
     # Type de runner
     runs-on: ubuntu-latest
     # Etapes à réaliser
@@ -20,3 +21,11 @@ jobs:
       - name: say bye
         # Action à réaliser
         run: echo "Bye, world!"
+
+    # second job
+  second-job:
+    name: my second job
+    runs-on: ubuntu-latest
+    steps:
+      - name: my step
+        run: echo "I'm the second job!"
