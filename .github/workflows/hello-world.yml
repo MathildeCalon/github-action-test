@@ -1,0 +1,22 @@
+# Nom du workflow
+name: first workflow
+
+# Trigger
+on: [workflow_dispatch]
+
+# Actions à réaliser lors du trigger
+jobs:
+  # Nom du job
+  first-job:
+    # Type de runner
+    runs-on: ubuntu-latest
+    # Etapes à réaliser
+    steps:
+      # Nom de l'action
+      - name: say hello
+        # Action à réaliser
+        run: echo "Hello, world!"
+      # Nom de l'action
+      - name: say bye
+        # Action à réaliser
+        run: echo "Bye, world!"
